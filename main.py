@@ -6,7 +6,7 @@ from tkinter import messagebox
 
 top = tk.Tk()
 top.geometry("295x55")
-db = mysql.connector.connect(host = "localhost",user = "root",passwd = "Arya@01072005")
+db = mysql.connector.connect(host = "localhost",user = "root",passwd = "***")
 cursor = db.cursor()
 def flight_csv():
     query = pd.read_sql_query("select * from airportmanagement.flight",con = db)
